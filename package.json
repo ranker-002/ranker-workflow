@@ -16,6 +16,7 @@
   "scripts": {
     "lint": "node --check ./bin/ranker-agentic.js",
     "test": "node --test tests/*.test.js",
+    "release:preflight": "bash ./scripts/release-preflight.sh",
     "video:preview": "npm --prefix video/remotion run preview",
     "video:render": "npm --prefix video/remotion run render",
     "video:render:v2": "npm --prefix video/remotion run render:v2",

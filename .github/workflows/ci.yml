@@ -18,11 +18,5 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Lint
-        run: npm run lint
-
-      - name: Test
-        run: npm test
-
-      - name: Package dry run
-        run: npm pack --dry-run --cache /tmp/npm-cache
+      - name: Release preflight
+        run: npm run release:preflight
