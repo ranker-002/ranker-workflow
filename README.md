@@ -21,8 +21,16 @@ A minimal but complete agentic delivery system with strong defaults, real gates,
 
 ## Install
 
+From npm (after package is published):
+
 ```bash
 npx ranker-agentic-workflow init my-project
+```
+
+From GitHub (works immediately, even before npm publish):
+
+```bash
+npx github:ranker-002/ranker-workflow init my-project
 ```
 
 Interactive wizard:
@@ -38,6 +46,16 @@ npx ranker-agentic-workflow init my-project \
   --agents codex,claude,opencode \
   --profile strict \
   --packs backend,data,security
+```
+
+## Troubleshooting Install
+
+If you get `npm ERR! 404 Not Found` for `ranker-agentic-workflow`, the package is not published yet on npm.
+
+Use GitHub source directly:
+
+```bash
+npx github:ranker-002/ranker-workflow init my-project
 ```
 
 ## Commands
