@@ -1,0 +1,33 @@
+id: FEAT-UI-001
+title: "Implement UI feature with quality and accessibility"
+owner_agent: implementer
+supporting_agents:
+  - reviewer
+skills:
+  - brainstorming
+  - requirements-clarification
+  - oneshot-feature
+  - test-design
+  - docs-update
+context:
+  business_goal: "Deliver a user-visible feature with clear UX and stable behavior."
+  technical_scope: "UI component/page flow, state handling, accessibility, tests."
+acceptance_criteria:
+  - "Core user interaction works on desktop and mobile."
+  - "Basic accessibility checks are satisfied."
+  - "UI regressions are covered by tests."
+implementation_plan:
+  - "Lock UI behavior and acceptance criteria."
+  - "Implement components and interaction flow."
+  - "Add tests and usage notes."
+quality_gates:
+  tests: required
+  security: required
+  review: required
+review_evidence:
+  approver: ""
+  reference: ""
+docs_evidence:
+  updated_files:
+    - ""
+status: todo
