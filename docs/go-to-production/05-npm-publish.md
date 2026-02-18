@@ -41,6 +41,12 @@ npx ranker-agentic-workflow --help
 npx ranker-agentic-workflow init my-project
 ```
 
+## Release pipeline guard
+
+The GitHub release workflow also verifies:
+- package visibility on npm registry after publish
+- public `npx` smoke execution on the released version
+
 ## If package is not yet published
 Use GitHub fallback temporarily:
 
