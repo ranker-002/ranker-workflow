@@ -58,6 +58,16 @@ Use GitHub source directly:
 npx github:ranker-002/ranker-workflow init my-project
 ```
 
+Use the same GitHub prefix for any command:
+
+```bash
+npx github:ranker-002/ranker-workflow ci-check .
+npx github:ranker-002/ranker-workflow feature auth-hardening --type api
+npx github:ranker-002/ranker-workflow run .ultra-workflow/tasks/feature.yml
+```
+
+Tip: once npm publication is confirmed, switch back to `npx ranker-agentic-workflow ...`.
+
 ## Commands
 
 ```bash
