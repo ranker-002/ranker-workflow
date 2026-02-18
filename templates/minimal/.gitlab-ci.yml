@@ -1,0 +1,14 @@
+stages:
+  - quality
+
+ranker_agentic_quality:
+  stage: quality
+  image: node:20
+  script:
+    - node ./bin/ranker-agentic.js doctor .
+    - node ./bin/ranker-agentic.js validate .ultra-workflow/tasks
+    - node ./bin/ranker-agentic.js benchmark .
+    - node ./bin/ranker-agentic.js ci-check .
+  only:
+    - merge_requests
+    - main

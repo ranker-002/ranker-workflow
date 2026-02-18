@@ -1,0 +1,22 @@
+{
+  "name": "ranker-agentic-workflow-video",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "preview": "remotion studio",
+    "render": "remotion render src/index.ts RankerWorkflowShowcase out/ranker-workflow-showcase.mp4",
+    "render:v2": "remotion render src/index.ts RankerWorkflowShowcaseV2 out/ranker-workflow-showcase-v2.mp4",
+    "render:v3": "remotion render src/index.ts RankerWorkflowShowcaseV3 out/ranker-workflow-showcase-v3.mp4",
+    "render:v3:vertical": "remotion render src/index.ts RankerWorkflowShowcaseV3Vertical out/ranker-workflow-showcase-v3-vertical.mp4"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.289"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.289",
+    "typescript": "5.7.3"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+
+# Local runtime artifacts at repository root
+/.ultra-workflow/
+
+# Local development assets not needed for CLI distribution
+video/
+tests/

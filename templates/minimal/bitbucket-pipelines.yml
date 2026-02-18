@@ -1,0 +1,25 @@
+image: node:20
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          name: Ranker Agentic Quality
+          caches:
+            - node
+          script:
+            - node ./bin/ranker-agentic.js doctor .
+            - node ./bin/ranker-agentic.js validate .ultra-workflow/tasks
+            - node ./bin/ranker-agentic.js benchmark .
+            - node ./bin/ranker-agentic.js ci-check .
+  branches:
+    main:
+      - step:
+          name: Ranker Agentic Quality
+          caches:
+            - node
+          script:
+            - node ./bin/ranker-agentic.js doctor .
+            - node ./bin/ranker-agentic.js validate .ultra-workflow/tasks
+            - node ./bin/ranker-agentic.js benchmark .
+            - node ./bin/ranker-agentic.js ci-check .

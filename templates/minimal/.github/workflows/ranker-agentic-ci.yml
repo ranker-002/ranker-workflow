@@ -1,0 +1,24 @@
+name: ranker-agentic-ci
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  workflow-check:
+    runs-on: ubuntu-latest
+    env:
+      RANKER_TASK: .ultra-workflow/tasks/feature.yml
+      RUN_TASK_GATES: "0"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node ./bin/ranker-agentic.js doctor .
+      - run: node ./bin/ranker-agentic.js validate .ultra-workflow/tasks
+      - run: node ./bin/ranker-agentic.js benchmark .
+      - name: Strict Task Gates
+        if: env.RUN_TASK_GATES == '1'
+        run: node ./bin/ranker-agentic.js ci-check . --task "$RANKER_TASK" --strict-manual-gates
