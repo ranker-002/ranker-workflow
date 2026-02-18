@@ -1,0 +1,33 @@
+id: HOTFIX-001
+title: "Critical production hotfix"
+owner_agent: debugger
+supporting_agents:
+  - reviewer
+  - security-auditor
+skills:
+  - debug
+  - review-fix
+  - rollback-readiness
+context:
+  impact: "Describe user/system impact and urgency"
+  reproduction: "Exact steps and affected scope"
+root_cause: ""
+mitigation_plan:
+  - "Immediate containment"
+  - "Permanent fix"
+  - "Post-incident follow-up"
+validation:
+  - "issue_reproduced_before_fix"
+  - "issue_not_reproducible_after_fix"
+  - "regression_test_added"
+quality_gates:
+  tests: required
+  security: required
+  review: required
+review_evidence:
+  approver: ""
+  reference: ""
+docs_evidence:
+  updated_files:
+    - ""
+status: todo

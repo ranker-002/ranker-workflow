@@ -1,0 +1,33 @@
+id: FEAT-001
+title: "Add task bootstrap command to generate ready-to-use feature contracts"
+owner_agent: implementer
+supporting_agents:
+  - reviewer
+  - security-auditor
+skill: oneshot-feature
+context:
+  business_goal: "Reduce setup time and enforce high-quality feature specs for every new request."
+  technical_scope: "Add `ranker-agentic-workflow feature <slug>` command that creates a filled feature task file under .ultra-workflow/tasks."
+acceptance_criteria:
+  - "CLI command `feature <slug>` creates `.ultra-workflow/tasks/feature-<slug>.yml` if workflow exists."
+  - "Generated file includes non-empty: id, title, owner_agent, skill, context, acceptance_criteria, implementation_plan, quality_gates, status."
+  - "Command fails with clear message if `.ultra-workflow/tasks` does not exist."
+  - "Command never overwrites existing task file unless `--force` is provided."
+  - "Validation command reports generated task as valid."
+implementation_plan:
+  - "Add new command parser branch for `feature` in CLI."
+  - "Implement slug sanitizer and deterministic FEAT id generation."
+  - "Generate YAML content with strict default contract."
+  - "Add overwrite protection and `--force` support."
+  - "Run `validate` on generated file as verification step."
+quality_gates:
+  tests: required
+  security: required
+  review: required
+review_evidence:
+  approver: ""
+  reference: ""
+docs_evidence:
+  updated_files:
+    - ""
+status: todo

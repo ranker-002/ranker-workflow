@@ -1,0 +1,24 @@
+id: REL-XXX
+title: "Release title"
+owner_agent: release-manager
+supporting_agents:
+  - reviewer
+  - security-auditor
+skills:
+  - pr
+  - commit
+  - security-audit
+release_scope:
+  - ""
+release_checks:
+  tests: pass
+  security: pass
+  notes: present
+rollback_plan: ""
+review_evidence:
+  approver: ""
+  reference: ""
+docs_evidence:
+  updated_files:
+    - ""
+status: todo
