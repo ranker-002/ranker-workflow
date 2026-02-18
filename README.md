@@ -128,3 +128,4 @@ MIT
 - CI workflow: `.github/workflows/ci.yml`
 - npm release workflow: `.github/workflows/release.yml`
 - Required secret for publish: `NPM_TOKEN`
+- Local preflight: `npm run release:preflight`
