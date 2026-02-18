@@ -6,5 +6,6 @@ This pack contains production launch artifacts for Ranker Agentic Workflow.
 - `02-kpis.md`
 - `03-roadmap-30-days.md`
 - `04-oss-launch-plan.md`
+- `05-npm-publish.md`
 
 Use these files as the operational source of truth for launch readiness.
