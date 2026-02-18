@@ -1,0 +1,35 @@
+id: FEAT-API-001
+title: "Implement API feature contract"
+owner_agent: implementer
+supporting_agents:
+  - reviewer
+  - security-auditor
+skills:
+  - requirements-clarification
+  - api-contract
+  - oneshot-feature
+  - test-design
+  - security-audit
+context:
+  business_goal: "Deliver a safe and stable API feature with backward compatibility."
+  technical_scope: "Endpoint changes, request/response schema, validation, authz, tests, docs."
+acceptance_criteria:
+  - "Request and response schemas are explicit and validated."
+  - "Backward compatibility impact is identified and handled."
+  - "Integration tests cover success and error paths."
+  - "Security and review gates pass."
+implementation_plan:
+  - "Clarify API behavior and versioning impact."
+  - "Implement endpoint changes and schema validation."
+  - "Add tests and docs updates."
+quality_gates:
+  tests: required
+  security: required
+  review: required
+review_evidence:
+  approver: ""
+  reference: ""
+docs_evidence:
+  updated_files:
+    - ""
+status: todo

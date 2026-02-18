@@ -1,0 +1,23 @@
+id: BUG-XXX
+title: "Bug title"
+owner_agent: debugger
+supporting_agents:
+  - reviewer
+skill: debug
+context:
+  impact: ""
+  reproduction: ""
+root_cause: ""
+fix_plan:
+  - ""
+validation:
+  - "regression_test_added"
+  - "issue_reproduced_before_fix"
+  - "issue_not_reproducible_after_fix"
+review_evidence:
+  approver: ""
+  reference: ""
+docs_evidence:
+  updated_files:
+    - ""
+status: todo
