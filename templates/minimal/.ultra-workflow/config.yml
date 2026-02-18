@@ -1,0 +1,22 @@
+version: 7
+workflow_name: ranker-agentic
+execution_mode: strict
+quality_gates:
+  tests_required: true
+  security_scan_required: true
+  review_required: true
+  docs_update_required: true
+risk_policy:
+  high_risk_threshold: 70
+  require_strict_manual_gates: true
+reliability:
+  max_autopilot_iterations: 3
+  auto_fix_enabled: true
+agent_order:
+  - planner
+  - implementer
+  - reviewer
+  - release-manager
+fallback_agents:
+  - debugger
+  - security-auditor

@@ -1,0 +1,17 @@
+version: 1
+scenarios:
+  - id: B001
+    name: "API change with backward compatibility"
+    task_template: "feature-api.yml"
+  - id: B002
+    name: "Data migration without downtime"
+    task_template: "feature-data.yml"
+  - id: B003
+    name: "UI feature with accessibility"
+    task_template: "feature-ui.yml"
+  - id: B004
+    name: "Performance-sensitive endpoint"
+    task_template: "feature-performance.yml"
+  - id: B005
+    name: "Critical incident hotfix"
+    task_template: "incident-hotfix.yml"

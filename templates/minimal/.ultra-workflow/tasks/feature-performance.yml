@@ -1,0 +1,32 @@
+id: FEAT-PERF-001
+title: "Implement performance-sensitive feature"
+owner_agent: implementer
+supporting_agents:
+  - reviewer
+skills:
+  - implementation-plan
+  - performance-check
+  - observability
+  - oneshot-feature
+context:
+  business_goal: "Deliver feature within explicit performance budgets."
+  technical_scope: "Latency/throughput critical path, benchmark, optimization, monitoring."
+acceptance_criteria:
+  - "Performance budgets are declared and measured."
+  - "Critical path benchmark results are recorded."
+  - "Observability signals exist for runtime behavior."
+implementation_plan:
+  - "Set target budgets and test scenario."
+  - "Implement feature and benchmark."
+  - "Tune bottlenecks and document tradeoffs."
+quality_gates:
+  tests: required
+  security: required
+  review: required
+review_evidence:
+  approver: ""
+  reference: ""
+docs_evidence:
+  updated_files:
+    - ""
+status: todo

@@ -1,0 +1,35 @@
+id: FEAT-DATA-001
+title: "Implement data-model feature safely"
+owner_agent: implementer
+supporting_agents:
+  - reviewer
+  - security-auditor
+skills:
+  - requirements-clarification
+  - db-migration-safe
+  - oneshot-feature
+  - test-design
+  - rollback-readiness
+context:
+  business_goal: "Deliver data feature without service disruption or data loss."
+  technical_scope: "Schema migration, backfill, compatibility phase, tests, rollback plan."
+acceptance_criteria:
+  - "Migration strategy is backward compatible or explicitly staged."
+  - "Data integrity checks pass before and after migration."
+  - "Rollback or recovery procedure exists."
+  - "Tests and review gates pass."
+implementation_plan:
+  - "Define migration phases and risk level."
+  - "Implement migration + backfill script."
+  - "Validate data checks and rollback path."
+quality_gates:
+  tests: required
+  security: required
+  review: required
+review_evidence:
+  approver: ""
+  reference: ""
+docs_evidence:
+  updated_files:
+    - ""
+status: todo
