@@ -123,6 +123,7 @@ Operational launch pack:
 - `docs/go-to-production/02-kpis.md`
 - `docs/go-to-production/03-roadmap-30-days.md`
 - `docs/go-to-production/04-oss-launch-plan.md`
+- `docs/go-to-production/05-npm-publish.md`
 
 ## Demo Video (Remotion)
 
